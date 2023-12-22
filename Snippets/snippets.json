@@ -1,0 +1,148 @@
+{
+	"Pattern": {
+		"prefix": ["pattern"],
+		"body": [
+			"#include <bits/stdc++.h>",
+			"",
+			"#define endl '\\n'",
+			"",
+			"using namespace std;",
+			"",
+			"int main(){",
+			"	ios::sync_with_stdio(false);",
+			"	cin.tie(0);",
+			"",
+			"	${0:/* code */}",
+			"",
+			"	return 0;",
+			"}"
+		],
+		"description": "A simple pattern for cpp"
+	},
+
+	"I/O": {
+		"prefix": ["I/O"],
+		"body": [
+			"freopen(\"input.txt\", \"r\", stdin);",
+			"freopen(\"output.txt\", \"w\", stdout);",
+		],
+		"description": "Input and Output standards for files"
+	},
+
+	"Test cases": {
+		"prefix": ["tc", "test_cases"],
+		"body": [
+			"int tc; cin >> tc; while (tc--) {",
+			"	${0:/* code */}",
+			"}"
+		],
+		"description": "Default aprouch for test cases"
+	},
+
+	"Define long long": {
+		"prefix": ["ll"],
+		"body": [
+			"using ll = long long;",
+		],
+		"description": "Define ll to long long"
+	},
+
+	"Int -> long long": {
+		"prefix": ["defintll","int to ll"],
+		"body": [
+			"#define int long long ${0://change main to int32_t}",
+		],
+		"description": "Define int to long long"
+	},
+
+	"Pair of ints": {
+		"prefix": ["pii"],
+		"body": [
+			"using pii = pair<int,int>;"
+		],
+		"description": "Define pii to pair<int,int>"
+	},
+
+	"Tuple of ints": {
+		"prefix": ["iii"],
+		"body": [
+			"using iii = tuple<int,int,int>;"
+		],
+		"description": "Define iii to tuple<int,int,int>"
+	},
+
+	"2 nested for loops": {
+		"prefix": ["2for"],
+		"body": [
+			"for (int i = 0; i < ${1:a}; i++) {",
+			"	for (int j = 0; j < ${2:b}; j++) {",
+			"		${0:/* code  */}",
+			"	}",
+			"}"
+		],
+		"description": "2 nested for loops strcuture"
+	},
+
+	"3 nested for loops": {
+		"prefix": ["3for"],
+		"body": [
+			"for (int i = 0; i < ${1:a}; i++) {",
+			"	for (int j = 0; j < ${2:b}; j++) {",
+			"		for (int k = 0; k < ${3:c}; k++) {",
+			"			${0:/* code  */}",
+			"		}",
+			"	}",
+			"}"
+		],
+		"description": "2 nested for loops strcuture"
+	},
+
+	"Reading a board N x N": {
+		"prefix": ["NxN", "boardN"],
+		"body": [
+			"int ${1:n}; ${2:char} ${3:c};",
+			"",
+			"cin >> ${1:n};",
+			"",
+			"${2:char} ${4:board}[${1:n}][${1:n}];",
+			"",
+			"for (int i = 0; i < ${1:n}; i++) {",
+			"	cin.get();",
+			"	for (int j = 0; j < ${1:n}; i++) {",
+			"		cin.get(${3:c});",
+			"		${4:board}[i][j] = ${3:c};",
+			"	}",
+			"}"
+		],
+		"description": "Building a board N x N"
+	},
+
+	"Reading a board row x col": {
+		"prefix": ["rowXcol","rxc","boardrowcol"],
+		"body": [
+			"int ${1:row}, ${2:col}; ${3:char} ${4:c};",
+			"",
+			"cin >> ${1:row} >> ${2:col};",
+			"",
+			"${3:char} ${5:board}[${1:row}][${2:col}];",
+			"",
+			"for (int i = 0; i < ${1:row}; i++) {",
+			"	cin.get();",
+			"	for (int j = 0; j < ${2:col}; i++) {",
+			"		cin.get(${4:c});",
+			"		${5:board}[i][j] = ${4:c};",
+			"	}",
+			"}"
+		],
+		"description": "Building a board row x col"
+	},
+
+	"Max/min of 3 elements": {
+		"prefix": ["defmax3", "defmin3", "maxmin3"],
+		"body": [
+			"#define min3(a,b,c) (min((a),min((b),(c))))", 
+			"#define max3(a,b,c) (max((a),max((b),(c))))"
+		],
+		"description": "Define max3(a,b,c) and min3(a,b,c) as a faster way to calculate tha max/min of 3 elements."
+	}
+}
