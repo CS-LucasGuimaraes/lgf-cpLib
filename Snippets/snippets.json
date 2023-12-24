@@ -1,4 +1,6 @@
 {
+	// Code template
+
 	"Pattern": {
 		"prefix": ["pattern"],
 		"body": [
@@ -17,7 +19,7 @@
 			"	return 0;",
 			"}"
 		],
-		"description": "A simple pattern for cpp"
+		"description": "Competitive programming boilerplate with optimized I/O for fast execution."
 	},
 
 	"I/O": {
@@ -26,7 +28,7 @@
 			"freopen(\"input.txt\", \"r\", stdin);",
 			"freopen(\"output.txt\", \"w\", stdout);",
 		],
-		"description": "Input and Output standards for files"
+		"description": "Redirecting standard input/output to files for automated testing and evaluation."
 	},
 
 	"Test cases": {
@@ -36,15 +38,17 @@
 			"	${0:/* code */}",
 			"}"
 		],
-		"description": "Default aprouch for test cases"
+		"description": "Repeating code block for multiple test cases."
 	},
+
+	// Type macros
 
 	"Define long long": {
 		"prefix": ["ll"],
 		"body": [
 			"using ll = long long;",
 		],
-		"description": "Define ll to long long"
+		"description": "Aliasing a shorter name for the long long data type for convenience."
 	},
 
 	"Int -> long long": {
@@ -52,7 +56,7 @@
 		"body": [
 			"#define int long long ${0://change main to int32_t}",
 		],
-		"description": "Define int to long long"
+		"description": "Redefining int to long long for wider integer range by default."
 	},
 
 	"Pair of ints": {
@@ -60,7 +64,7 @@
 		"body": [
 			"using pii = pair<int,int>;"
 		],
-		"description": "Define pii to pair<int,int>"
+		"description": "Creating a concise alias pii for the pair<int, int> data type to simplify code."
 	},
 
 	"Tuple of ints": {
@@ -68,8 +72,10 @@
 		"body": [
 			"using iii = tuple<int,int,int>;"
 		],
-		"description": "Define iii to tuple<int,int,int>"
+		"description": "Establishing a succinct alias iii for the tuple<int, int, int> data type to enhance readability."
 	},
+
+	// Nested loops
 
 	"2 nested for loops": {
 		"prefix": ["2for"],
@@ -80,7 +86,7 @@
 			"	}",
 			"}"
 		],
-		"description": "2 nested for loops strcuture"
+		"description": "Nested loops iterating through a 2D structure or grid-like pattern."
 	},
 
 	"3 nested for loops": {
@@ -94,8 +100,10 @@
 			"	}",
 			"}"
 		],
-		"description": "2 nested for loops strcuture"
+		"description": "Triple-nested loops traversing a 3D structure or cube-like arrangement."
 	},
+
+	// Reading and iterating through boards (matrices)
 
 	"Reading a board N x N": {
 		"prefix": ["NxN", "boardN"],
@@ -114,7 +122,7 @@
 			"	}",
 			"}"
 		],
-		"description": "Building a board N x N"
+		"description": "Reading a square board of size N x N from input."
 	},
 
 	"Reading a board row x col": {
@@ -134,8 +142,42 @@
 			"	}",
 			"}"
 		],
-		"description": "Building a board row x col"
+		"description": "Reading a rectangular board of variable dimensions from input."
 	},
+
+	"dx 4 directions": {
+		"prefix": ["dx4"],
+		"body": [
+			"const int dx[] = {0,0,1,-1};"
+		],
+		"description": "Declaring an array for common horizontal movement offsets in grid-based problems."
+	},
+
+	"dy 4 directions": {
+		"prefix": ["dy4"],
+		"body": [
+			"const int dy[] = {1,-1,0,0};"
+		],
+		"description": "Declaring an array for common vertical movement offsets in grid-based problems."
+	},
+
+	"dx 8 directions": {
+		"prefix": ["dx8"],
+		"body": [
+			"const int dx[] = {0, 0, 1,-1, 1, 1,-1,-1};"
+		],
+		"description": "Declaring an array for horizontal offsets representing all 8 adjacent directions in a grid, including diagonals."
+	},
+
+	"dy 8 directions": {
+		"prefix": ["dy8"],
+		"body": [
+			"const int dy[] = {1,-1, 0, 0, 1,-1, 1,-1};"
+		],
+		"description": "Declaring an array for vertical offsets corresponding to all 8 adjacent directions in a grid, including diagonals."
+	},
+
+	// Quality of life (QoL)
 
 	"Max/min of 3 elements": {
 		"prefix": ["defmax3", "defmin3", "maxmin3"],
@@ -143,6 +185,14 @@
 			"#define min3(a,b,c) (min((a),min((b),(c))))", 
 			"#define max3(a,b,c) (max((a),max((b),(c))))"
 		],
-		"description": "Define max3(a,b,c) and min3(a,b,c) as a faster way to calculate tha max/min of 3 elements."
+		"description": "Defining macros for finding minimum and maximum among three values."
+	},
+	
+	"MOD": {
+		"prefix": ["MOD", "1e9+7"],
+		"body": [
+			"const int MOD = 1e9+7; ${0://pay attention with others MOD numbers, e.g., 1e9+9, 998244353, 469762049}"
+		],
+		"description": "Defining a constant modulo value for calculations preventing integer overflow and ensuring compatibility with algorithms that rely on prime numbers."
 	}
 }
