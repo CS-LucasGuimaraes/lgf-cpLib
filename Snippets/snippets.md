@@ -1,4 +1,4 @@
-# Code snippets in c++
+# Code snippets in C++
 ## Code template
 
 * ### Pattern &nbsp; `"pattern"`
@@ -172,4 +172,16 @@
   
   ```c++
   const int MOD = 1e9+7; //pay attention with others MOD numbers, e.g., 1e9+9, 998244353, 469762049 
+  ```
+* ### INT INF  &nbsp; `"intinf"`
+  Define a constant value for representing infinity for integer values within program context.
+  
+  ```c++
+  const int INF = INT_MAX;
+  ```
+* ### LONG LONG INF  &nbsp; `"llinf"`
+  Define a constant value for representing infinity for long integer values within program context.
+  
+  ```c++
+  const long long INF = LLONG_MAX;
   ```

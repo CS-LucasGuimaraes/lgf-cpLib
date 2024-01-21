@@ -194,5 +194,21 @@
 			"const int MOD = 1e9+7; ${0://pay attention with others MOD numbers, e.g., 1e9+9, 998244353, 469762049}"
 		],
 		"description": "Defining a constant modulo value for calculations preventing integer overflow and ensuring compatibility with algorithms that rely on prime numbers."
+	},
+
+	"INT INF": {
+		"prefix": ["intinf"],
+		"body": [
+			"const int INF = INT_MAX;"
+		],
+		"description": "Define a constant value for representing infinity for integer values within program context."
+	},
+
+	"LONG LONG INF ": {
+		"prefix": ["llinf"],
+		"body": [
+			"const long long INF = LLONG_MAX;"
+		],
+		"description": "Define a constant value for representing infinity for long integer values within program context."
 	}
 }
