@@ -35,10 +35,23 @@
 		"prefix": ["tc", "test_cases"],
 		"body": [
 			"int tc; cin >> tc; while (tc--) {",
-			"	${0:/* code */}",
+			"	solve();",
 			"}"
 		],
 		"description": "Repeating code block for multiple test cases."
+	},
+
+	"Solve Function": {
+		"prefix": ["solve"],
+		"body": [
+			"int solve() {",
+			"",
+			"	${0:/* code */}",
+			"",
+			"	return 0;",
+			"}"			
+		],
+		"description": "Solving the problem."
 	},
 
 	// Type macros

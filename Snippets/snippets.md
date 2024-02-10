@@ -32,7 +32,18 @@
 
   ```c++
   int tc; cin >> tc; while (tc--) {
+      solve();
+  }
+  ```
+* ### Solve Function &nbsp; `"solve" `
+  Function for solving the problem.
+
+  ```c++
+  int solve() {
+
       /* code */
+
+      return 0;
   }
   ```
 
