@@ -22,6 +22,36 @@
 		"description": "Competitive programming boilerplate with optimized I/O for fast execution."
 	},
 
+	"Pattern with Test Cases": {
+		"prefix": ["patterntc"],
+		"body": [
+			"#include <bits/stdc++.h>",
+			"",
+			"#define endl '\\n'",
+			"",
+			"using namespace std;",
+			"",
+			"int solve() {",
+			"",
+			"	${0:/* code */}",
+			"",
+			"	return 0;",
+			"}"
+			"",
+			"int main(){",
+			"	ios::sync_with_stdio(false);",
+			"	cin.tie(0);",
+			"",
+			"int tc; cin >> tc; while (tc--) {",
+			"	solve();",
+			"}"
+			"",
+			"	return 0;",
+			"}"
+		],
+		"description": "Competitive programming boilerplate with optimized I/O for fast execution and repeating code block for multiple test cases."
+	},
+
 	"I/O": {
 		"prefix": ["I/O"],
 		"body": [
@@ -129,7 +159,7 @@
 			"",
 			"for (int i = 0; i < ${1:n}; i++) {",
 			"	cin.get();",
-			"	for (int j = 0; j < ${1:n}; i++) {",
+			"	for (int j = 0; j < ${1:n}; j++) {",
 			"		cin.get(${3:c});",
 			"		${4:board}[i][j] = ${3:c};",
 			"	}",

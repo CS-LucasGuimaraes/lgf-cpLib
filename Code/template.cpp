@@ -4,6 +4,13 @@
 
 using namespace std;
 
+int solve() {
+
+    /* code */
+
+    return 0;
+}
+
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -12,7 +19,7 @@ int main(){
     // freopen("output.txt", "w", stdout);
 
     int tc; cin >> tc; while (tc--) {
-        /* code */
+        solve();
     }
 
     return 0;

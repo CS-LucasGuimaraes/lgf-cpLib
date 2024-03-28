@@ -20,6 +20,35 @@
       return 0;
   }
   ```
+* ### Pattern with Test Cases &nbsp; `"patterntc"`
+  Competitive programming boilerplate with optimized I/O for fast execution and repeating code block for multiple test cases.
+
+  ```c++
+  #include <bits/stdc++.h>
+
+  #define endl '\n'
+
+  using namespace std;
+
+  int solve() {
+
+      /* code */
+
+      return 0;
+  }
+
+  int main(){
+      ios::sync_with_stdio(false);
+      cin.tie(0);
+
+      int tc; cin >> tc; while (tc--) {
+          solve();
+      }
+
+      return 0;
+  }
+  ```
+
 * ### I/O &nbsp; `"I/O"`
   Redirecting standard input/output to files for automated testing and evaluation.
 
@@ -118,7 +147,7 @@
 
   for (int i = 0; i < n; i++) {
       cin.get();
-      for (int j = 0; j < n; i++) {
+      for (int j = 0; j < n; j++) {
           cin.get(c);
           board[i][j] = c;
       }
