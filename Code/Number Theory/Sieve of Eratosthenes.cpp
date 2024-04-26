@@ -4,8 +4,7 @@ using ll = long long;
 
 vector<ll> prime_list;
 
-void SieveOfEratosthenes(ll n)
-{
+void SieveOfEratosthenes(ll n) {
     vector<bool> prime(n + 1, true);
  
     for (ll p = 2; p <= n; p++) {
