@@ -165,7 +165,7 @@
 
   for (int i = 0; i < row; i++) {
       cin.get();
-      for (int j = 0; j < col; i++) {
+      for (int j = 0; j < col; j++) {
           cin.get(c);
           board[i][j] = c;
       }

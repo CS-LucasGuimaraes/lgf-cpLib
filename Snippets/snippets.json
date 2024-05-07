@@ -179,7 +179,7 @@
 			"",
 			"for (int i = 0; i < ${1:row}; i++) {",
 			"	cin.get();",
-			"	for (int j = 0; j < ${2:col}; i++) {",
+			"	for (int j = 0; j < ${2:col}; j++) {",
 			"		cin.get(${4:c});",
 			"		${5:board}[i][j] = ${4:c};",
 			"	}",
