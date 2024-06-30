@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 using ll = long long;
 
@@ -6,12 +7,14 @@ const int INF = INT_MAX;
 const int max_size = 2e5 + 5;
 vector<ll> seg(4*max_size);
 vector<ll> arr(max_size);
+
 int n,q;
 
 ll operation(ll a, ll b) {
     return a+b;
 }
 
+// Time complexity: O(n)
 void build(int l = 0, int r = n-1, int index = 0){      // build()
 	if(l == r){
 		seg[index] = arr[l];
@@ -25,6 +28,7 @@ void build(int l = 0, int r = n-1, int index = 0){      // build()
 	seg[index] = operation(seg[left], seg[right]);
 }
 
+// Time complexity: O(log(n))
 ll query(int L, int R, int l = 0, int r = n-1, int index = 0){      // query(L-1, R-1)
 	if(R < l || L > r) return 0; // Neutral element of the operation
 	if(L <= l && r <= R) return seg[index];
@@ -37,6 +41,7 @@ ll query(int L, int R, int l = 0, int r = n-1, int index = 0){      // query(L-1
 	return operation(ql,qr); 
 }
 
+// Time complexity: O(log(n))
 void update(int pos, int num, int l = 0, int r = n-1, int index = 0){       // update(pos-1, value)
 	if(l == r){
 		seg[index] = num;

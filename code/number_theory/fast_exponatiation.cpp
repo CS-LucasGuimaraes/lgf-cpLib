@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 using ll = long long;
 
@@ -29,6 +30,17 @@ Matrix fexp(Matrix a, ll n){
 	while(n){
 		if(n & 1) ans = ans * a;
 		a = a * a;
+		n >>= 1;
+	}
+	return ans;
+}
+
+// Time complexity: O(log(n))
+ll fexpll(ll a, ll n){
+	ll ans = 1;
+	while(n){
+		if(n & 1) ans = (ans * a) % MOD;
+		a = (a * a) % MOD;
 		n >>= 1;
 	}
 	return ans;

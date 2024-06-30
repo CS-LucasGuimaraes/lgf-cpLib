@@ -1,2 +1,11 @@
 .vscode
 .exe
+
+contents.tex
+notebook.aux
+notebook.log
+notebook.toc
+notebook.out
+notebook.fls
+notebook.fdb_latexmk
+
