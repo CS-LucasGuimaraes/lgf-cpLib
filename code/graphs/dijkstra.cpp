@@ -1,10 +1,4 @@
-#include <bits/stdc++.h>
-
-#define endl '\n'
-
-using namespace std;
-
-
+// Time Complexity: O((V + E) * log(V))
 void dijkstra(vector<vector<pair<int, int>>>& adj, vector<int>& dist, int s) {
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
     pq.push({0, s});

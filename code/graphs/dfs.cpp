@@ -1,7 +1,3 @@
-#include <bits/stdc++.h>
-
-using namespace std;
-
 // Time Complexity: O(V + E)
 void dfs(vector<vector<int>>& adj, vector<bool>& visited, int v) {
     visited[v] = true;

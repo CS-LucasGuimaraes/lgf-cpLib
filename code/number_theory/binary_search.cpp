@@ -1,7 +1,3 @@
-#include <bits/stdc++.h>
-
-using namespace std;
-
 // Time Complexity: O(log(n))
 int binarySearch(int l, int r, int* arr, int target) {
     int answ;

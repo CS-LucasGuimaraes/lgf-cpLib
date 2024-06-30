@@ -13,8 +13,8 @@ graphs/floydwarshall.cpp,Floyd Warshall
 
 [Number Theory]
 number_theory/binary_search.cpp,Binary Search
-number_theory/binary_search.cpp,Fast Exponentiation
-number_theory/gcd_lcm.cpp,Greates Commom Divisor and Least Common Multiple
+number_theory/fast_exponentiation.cpp,Fast Exponentiation
+number_theory/gcd_lcm.cpp,GCD and LCM
 number_theory/eratosthenes_sieve.cpp,Sieve of Eratosthenes
 
 [Data Structures]

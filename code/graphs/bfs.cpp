@@ -1,7 +1,3 @@
-#include <bits/stdc++.h>
-
-using namespace std;
-
 // Time Complexity: O(V + E)
 void bfs(vector<vector<int>>& adj, vector<bool>& visited, int start) {
     queue<int> operation_order;

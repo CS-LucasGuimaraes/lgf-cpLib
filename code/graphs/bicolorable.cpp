@@ -1,9 +1,3 @@
-#include <bits/stdc++.h>
-
-#define endl '\n'
-
-using namespace std;
-
 // Time Complexity: O(V + E)
 bool bicolorable(vector<vector<int>>&adj, vector<bool>& visited, vector<bool>& color, int v) {
     visited[v] = true;

@@ -1,10 +1,6 @@
-#include <bits/stdc++.h>
-
-using namespace std;
-using ll = long long;
-
 vector<ll> prime_list;
 
+// Time Complexity: O(n log log n)
 void EratosthenesSieve(ll n) {
     vector<bool> prime(n + 1, true);
  

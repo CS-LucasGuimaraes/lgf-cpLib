@@ -1,8 +1,3 @@
-#include <bits/stdc++.h>
-
-using namespace std;
-using ll = long long;
-
 const int max_size = 2e5+5;
 vector<ll> arr(max_size+1,0);
 vector<ll> bit(max_size+1,0);
@@ -19,7 +14,7 @@ ll query(int i){ // [1,i]
 }
 
 // Time complexity: O(log(n))
-ll queryRange(int l, int r){    // [l,r]
+ll queryRange(int l, int r){ // [l,r]
 	ll qr = query(r);
 	ll ql = query(l-1);
 	return qr-ql;
