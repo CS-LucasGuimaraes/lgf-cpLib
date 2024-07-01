@@ -12,6 +12,7 @@ graphs/dijkstra.cpp,Dijkstra
 graphs/floydwarshall.cpp,Floyd Warshall
 
 [Number Theory]
+number_theory/digit_sum.cpp,Digit Sum
 number_theory/binary_search.cpp,Binary Search
 number_theory/fast_exponentiation.cpp,Fast Exponentiation
 number_theory/gcd_lcm.cpp,GCD and LCM
