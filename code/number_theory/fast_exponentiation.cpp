@@ -4,11 +4,11 @@ class Matrix{
 	public:
 	vector<vector<ll>> mat;
 	int m;
-	Matrix(int m): m(m){
+	Matrix(int m): m(m) {
 		mat.resize(m);
 		for(int i = 0; i < m; i++) mat[i].resize(m,0);
 	}
-	Matrix operator * (const Matrix& rhs){
+	Matrix operator * (const Matrix& rhs) {
 		Matrix ans = Matrix(m);
 		for(int i = 0; i < m; i++)
 			for(int j = 0; j < m; j++)
@@ -18,11 +18,11 @@ class Matrix{
 	}
 };
 
-Matrix fexp(Matrix a, ll n){
+Matrix fexp(Matrix a, ll n) {
 	int m = a.m;
 	Matrix ans = Matrix(m);
 	for(int i = 0; i < m; i++) ans.mat[i][i] = 1;
-	while(n){
+	while(n) {
 		if(n & 1) ans = ans * a;
 		a = a * a;
 		n >>= 1;
@@ -31,9 +31,9 @@ Matrix fexp(Matrix a, ll n){
 }
 
 // Time complexity: O(log(n))
-ll fexpll(ll a, ll n){
+ll fexpll(ll a, ll n) {
 	ll ans = 1;
-	while(n){
+	while(n) {
 		if(n & 1) ans = (ans * a) % MOD;
 		a = (a * a) % MOD;
 		n >>= 1;
