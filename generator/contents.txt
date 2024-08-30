@@ -17,7 +17,21 @@ number_theory/binary_search.cpp,Binary Search
 number_theory/fast_exponentiation.cpp,Fast Exponentiation
 number_theory/gcd_lcm.cpp,GCD and LCM
 number_theory/eratosthenes_sieve.cpp,Sieve of Eratosthenes
+number_theory/modular_inverse.cpp,Modular Inverse
 
 [Data Structures]
 data_structures/segtree.cpp,Segment Tree
 data_structures/binary_indexed_tree.cpp,Binary Indexed Tree (BIT)
+
+[Combinatorics]
+combinatorics/fact.cpp,Factorial
+combinatorics/SumOfPA.cpp,Sum of PA
+
+[Dynamic Programming]
+dynamic_programming/knapsack.cpp,Knapsack
+
+[Geometry]
+geometry/point.cpp,Point
+geometry/convex_hull.cpp,Convex Hull
+geometry/closest_pair.cpp,Closest Pair
+    
