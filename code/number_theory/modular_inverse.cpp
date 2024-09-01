@@ -1,3 +1,4 @@
+// Time complexity: O(log(mod))
 ll modInverse(ll n) {
     ll ex = MOD-2, result = 1;
     while (ex > 0) {
