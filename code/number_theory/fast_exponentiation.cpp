@@ -40,3 +40,8 @@ ll fexpll(ll a, ll n) {
 	}
 	return ans;
 }
+
+// Time complexity: O(log(mod-2))
+ll modInverse(ll n) {
+    fexpll(n, MOD-2);
+}
